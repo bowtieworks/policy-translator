@@ -32,5 +32,4 @@ The other file, `import-bowtie-policy-from-json.py` is for usage after the `tran
 command line: `python3 import-bowtie-policy-from-json.py -a bt0.jf-spacex-9998.bowtie.direct -f bt0.jf-spacex-9998.bowtie.direct-portable-export.json`
 
 ## Misc
-Slack justin if you have questions
-
+Reach out to support@bowtie.works if you have any questions or need any assistance.
