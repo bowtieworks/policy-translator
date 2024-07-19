@@ -1,0 +1,24 @@
+imports:
+  - groups/seceng.yaml
+  - groups/globals.yaml
+site: ht
+vlan: 2191
+rules:
+  - name: Allow to service outbound
+    dst:
+      - fqdn--service.spacex.com
+    src:
+      - 10.0.0.0/24
+      - 10.0.1.0/24
+    ports:
+      - 443/tcp
+      - 8888/tcp
+  - name: Allow to domain controllers
+    dst:
+      - group--global.ad_hosts
+    src: 10.32.0.0/19
+    ports:
+      - 389/tcp
+      - 636/tcp
+      - 53/tcp
+      - 53/udp
